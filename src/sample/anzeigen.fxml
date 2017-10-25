@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Anzeigen">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="500.0" prefWidth="688.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" prefWidth="200.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="ID:" GridPane.rowIndex="1">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Datum:" GridPane.rowIndex="2">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Beschreibung:" GridPane.rowIndex="3">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Preis:" GridPane.rowIndex="4">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Bezahlt?" GridPane.rowIndex="5">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_id" alignment="CENTER" maxWidth="1.7976931348623157E308" text="placeholder" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_date" alignment="CENTER" maxWidth="1.7976931348623157E308" text="placeholder" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_description" alignment="CENTER" maxWidth="1.7976931348623157E308" text="placeholder" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_value" alignment="CENTER" maxWidth="1.7976931348623157E308" text="placeholder" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_paid" alignment="CENTER" maxWidth="1.7976931348623157E308" text="placeholder" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#first" text="1. Eintrag">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#previous" text="Vorheriger Eintrag">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#next" text="Nächster Eintrag">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#last" text="Letzter Eintrag">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="JDBC JavaFX Anzeige" GridPane.columnIndex="1">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</GridPane>
